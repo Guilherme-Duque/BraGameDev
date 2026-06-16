@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>Eventos - BraGameDev</title>
+
+    <style>
+        body {
+            background: #0B1220;
+        }
+
+        .event-card:hover {
+            transform: translateY(-8px);
+        }
+    </style>
+
+</head>
+
+<body class="text-white min-h-screen flex flex-col">
+
+    <header class="fixed w-full top-0 z-50 bg-[#0B1220]/90 backdrop-blur border-b border-white/10">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="flex items-center justify-between h-20">
+
+                <div class="flex items-center gap-3">
+
+                    <div class="w-12 h-12 bg-green-500 rounded-xl flex items-center justify-center font-bold">
+                        <img src="img/BraGameDev_Ícone.png" alt="Logo">
+                    </div>
+
+                    <h1 class="font-bold text-xl">
+                        BraGameDev
+                    </h1>
+
+                </div>
+
+                <a href="index.html" class="btn btn-primary">
+                    Voltar
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <section class="pt-36 pb-24 flex-1">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <h1 class="text-5xl font-bold text-center">
+                Game Jams
+            </h1>
+
+            <p class="text-center text-gray-400 mt-4">
+                Confira os próximos eventos da comunidade.
+            </p>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+
+                <a href="detalhes-evento.html?evento=ggj"
+                    class="event-card card bg-[#1A2333] shadow-xl transition duration-300">
+
+                    <div class="card-body">
+                        <h2 class="card-title text-green-400">Global Game Jam</h2>
+                        <p class="text-gray-300">
+                            Maior Game Jam do mundo, realizada anualmente.
+                        </p>
+                        <div class="badge badge-outline">48 horas</div>
+                    </div>
+
+                </a>
+
+                <a href="detalhes-evento.html?evento=ludum"
+                    class="event-card card bg-[#1A2333] shadow-xl transition duration-300">
+
+                    <div class="card-body">
+                        <h2 class="card-title text-green-400">Ludum Dare</h2>
+                        <p class="text-gray-300">
+                            Uma das competições mais tradicionais para devs indie.
+                        </p>
+                        <div class="badge badge-outline">72 horas</div>
+                    </div>
+
+                </a>
+
+                <a href="detalhes-evento.html?evento=brackeys"
+                    class="event-card card bg-[#1A2333] shadow-xl transition duration-300">
+
+                    <div class="card-body">
+                        <h2 class="card-title text-green-400">Brackeys Game Jam</h2>
+                        <p class="text-gray-300">
+                            Evento online focado em criatividade e inovação.
+                        </p>
+                        <div class="badge badge-outline">7 dias</div>
+                    </div>
+
+                </a>
+
+                <a href="detalhes-evento.html?evento=gmtk"
+                    class="event-card card bg-[#1A2333] shadow-xl transition duration-300">
+
+                    <div class="card-body">
+                        <h2 class="card-title text-green-400">GMTK Game Jam</h2>
+                        <p class="text-gray-300">
+                            Organizada pelo canal Game Maker's Toolkit.
+                        </p>
+                        <div class="badge badge-outline">96 horas</div>
+                    </div>
+
+                </a>
+
+                <a href="detalhes-evento.html?evento=kenney"
+                    class="event-card card bg-[#1A2333] shadow-xl transition duration-300">
+
+                    <div class="card-body">
+                        <h2 class="card-title text-green-400">Kenney Jam</h2>
+                        <p class="text-gray-300">
+                            Excelente oportunidade para iniciantes.
+                        </p>
+                        <div class="badge badge-outline">48 horas</div>
+                    </div>
+
+                </a>
+
+                <a href="detalhes-evento.html?evento=jaaj"
+                    class="event-card card bg-[#1A2333] shadow-xl transition duration-300">
+
+                    <div class="card-body">
+                        <h2 class="card-title text-green-400">Game Jaaj</h2>
+                        <p class="text-gray-300">
+                            Evento brasileiro para criação de jogos.
+                        </p>
+                        <div class="badge badge-outline">Online</div>
+                    </div>
+
+                </a>
+
+            </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="py-10 border-t border-white/10 text-center text-gray-400">
+        copyright © 2026 BraGameDev
+    </footer>
+
+    <script src="eventos.js"></script>
+</body>
+
+</html>

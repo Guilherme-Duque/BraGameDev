@@ -1,0 +1,205 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>Detalhes do Evento - BraGameDev</title>
+
+    <style>
+        body {
+            background: #0B1220;
+        }
+    </style>
+</head>
+
+<body class="text-white min-h-screen flex flex-col">
+
+    <header class="fixed w-full top-0 z-50 bg-[#0B1220]/90 backdrop-blur border-b border-white/10">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="flex items-center justify-between h-20">
+
+                <div class="flex items-center gap-3">
+
+                    <div class="w-12 h-12 bg-green-500 rounded-xl flex items-center justify-center font-bold">
+                        <img src="img/BraGameDev_Ícone.png" alt="Logo">
+                    </div>
+
+                    <h1 class="font-bold text-xl">
+                        BraGameDev
+                    </h1>
+
+                </div>
+
+                <a href="eventos.html" class="btn btn-primary">
+                    Voltar
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <main class="flex-1 pt-32 pb-16">
+
+        <div class="max-w-5xl mx-auto px-6">
+
+            <div class="hero bg-[#1A2333] rounded-3xl overflow-hidden">
+
+                <div class="hero-content text-center py-20">
+
+                    <div>
+
+                        <div class="badge badge-success mb-4">
+                            Inscrições Abertas
+                        </div>
+
+                        <h1 id="titulo" class="text-5xl font-bold"></h1>
+
+                        <p id="data" class="py-4 text-gray-300"></p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 mt-10">
+
+                <div class="stats shadow bg-[#1A2333]">
+
+                    <div class="stat">
+
+                        <div class="stat-title text-gray-400">
+                            Duração
+                        </div>
+
+                        <div id="duracao" class="stat-value text-green-400 text-2xl"></div>
+
+                    </div>
+
+                </div>
+
+                <div class="stats shadow bg-[#1A2333]">
+
+                    <div class="stat">
+
+                        <div class="stat-title text-gray-400">
+                            Modalidade
+                        </div>
+
+                        <div id="modalidade" class="stat-value text-blue-400 text-2xl"></div>
+
+                    </div>
+
+                </div>
+
+                <div class="stats shadow bg-[#1A2333]">
+
+                    <div class="stat">
+
+                        <div class="stat-title text-gray-400">
+                            Equipes
+                        </div>
+
+                        <div id="equipes" class="stat-value text-yellow-400 text-2xl"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="card bg-[#1A2333] shadow-xl mt-10">
+
+                <div class="card-body">
+
+                    <h2 class="card-title text-3xl">
+                        Sobre o Evento
+                    </h2>
+
+                    <p id="descricao" class="text-gray-300 leading-relaxed"></p>
+
+                </div>
+
+            </div>
+
+            <div class="card bg-[#1A2333] shadow-xl mt-8">
+
+                <div class="card-body">
+
+                    <h2 class="card-title text-3xl">
+                        Requisitos
+                    </h2>
+
+                    <ul id="requisitos" class="list-disc pl-6 text-gray-300 space-y-2"></ul>
+
+                </div>
+
+            </div>
+
+            <div class="card bg-[#1A2333] shadow-xl mt-8">
+
+                <div class="card-body">
+
+                    <h2 class="card-title text-3xl">
+                        Cronograma
+                    </h2>
+
+                    <div class="overflow-x-auto">
+
+                        <table class="table">
+
+                            <tbody id="cronograma"></tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="card bg-[#1A2333] shadow-xl mt-8">
+
+                <div class="card-body">
+
+                    <h2 class="card-title text-3xl">
+                        Premiações
+                    </h2>
+
+                    <p id="premiacao" class="text-gray-300"></p>
+
+                </div>
+
+            </div>
+
+            <div class="flex justify-center mt-10">
+
+                <button class="btn btn-success btn-lg">
+                    Inscrever-se
+                </button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="py-10 border-t border-white/10 text-center text-gray-400">
+        copyright © 2026 BraGameDev
+    </footer>
+
+    <script src="eventos.js"></script>
+
+</body>
+
+</html>
