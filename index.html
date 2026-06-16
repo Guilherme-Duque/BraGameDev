@@ -31,236 +31,278 @@ body{
 
 <body class="text-white">
 
-<header class="fixed w-full top-0 z-50 bg-[#0B1220]/90 backdrop-blur border-b border-white/10">
-<div class="max-w-7xl mx-auto px-6">
-<div class="flex items-center justify-between h-20">
+    <header class="fixed w-full top-0 z-50 bg-[#0B1220]/90 backdrop-blur border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex items-center justify-between h-20">
 
-    <div class="flex items-center gap-3">
-        <div class="w-12 h-12 bg-green-500 rounded-xl flex items-center justify-center font-bold">
-            <img src="img/BraGameDev_Ícone.png" alt="LOGO">
-        </div>
-        <h1 class="font-bold text-xl">BraGameDev</h1>
-    </div>
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 bg-green-500 rounded-xl flex items-center justify-center font-bold">
+                        <img src="img/BraGameDev_Ícone.png" alt="LOGO">
+                    </div>
+                    <h1 class="font-bold text-xl">BraGameDev</h1>
+                </div>
 
-    <nav class="hidden md:flex gap-8">
-        <a href="#inicio" class="hover:text-green-400">Início</a>
-        <a href="#sobre" class="hover:text-green-400">Quem Somos</a>
-        <a href="#jogos" class="hover:text-green-400">Jogos</a>
-        <a href="eventos.html" class="hover:text-green-400">Eventos</a>
-    </nav>
+                <nav class="hidden md:flex gap-8">
+                    <a href="#inicio" class="hover:text-green-400">Início</a>
+                    <a href="#sobre" class="hover:text-green-400">Quem Somos</a>
+                    <a href="#jogos" class="hover:text-green-400">Jogos</a>
+                    <a href="eventos.html" class="hover:text-green-400">Eventos</a>
+                </nav>
 
-    <a href="#inscricao" class="bg-blue-600 hover:bg-blue-700 px-5 py-3 rounded-xl font-semibold transition">
-        Inscreva-se
-    </a>
+                <a href="#inscricao"
+                    class="hidden md:block bg-blue-600 hover:bg-blue-700 px-5 py-3 rounded-xl font-semibold transition">
+                    Inscreva-se
+                </a>
 
-</div>
-</div>
-</header>
+                <div class="dropdown dropdown-end md:hidden">
 
-<section id="inicio" class="min-h-screen flex items-center pt-20">
-<div class="max-w-7xl mx-auto px-6">
-<div class="grid lg:grid-cols-2 gap-10 items-center">
+                    <label tabindex="0" class="btn btn-ghost btn-circle">
 
-    <div>
-        <span class="bg-green-500/20 text-green-400 px-4 py-2 rounded-full">🎮 Oficinas de Desenvolvimento de Jogos</span>
-        <h1 class="text-5xl md:text-6xl font-bold mt-6 leading-tight">Transforme sua paixão por jogos em uma carreira profissional.</h1>
-        <p class="text-gray-300 text-lg mt-6">Aprenda Unity, Godot e GameMaker através de oficinas práticas, crie projetos reais, desenvolva seu portfólio e conecte-se com outros futuros desenvolvedores.</p>
-        <div class="flex flex-wrap gap-4 mt-8">
-            <a href="#inscricao" class="bg-green-500 text-black font-bold px-8 py-4 rounded-xl hover:scale-105 transition">Quero Participar</a>
-            <a href="#sobre" class="border border-white/20 px-8 py-4 rounded-xl hover:bg-white/10 transition">Saiba Mais</a>
-        </div>
-    </div>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="h-6 w-6"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor">
 
-    <div class="flex justify-center">
-        <div class="w-full max-w-md aspect-square rounded-3xl overflow-hidden flex items-center justify-center">
-            <img src="img/KoalinhaSurpresa.png" alt="Projeto Indie" class="w-full h-full object-cover">
-        </div>
-    </div>
+                            <path stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
 
-</div>
-</div>
-</section>
+                        </svg>
 
-<section class="relative py-24">
-    <div class="absolute inset-0 bg-cover bg-center" style="background-image:url('img/Fundinho.png');"></div>
-    <div class="absolute inset-0 bg-[#111827]/85"></div>
+                    </label>
 
-    <div class="relative max-w-7xl mx-auto px-6">
-        <h2 class="text-4xl font-bold text-center">O Brasil consome jogos. Mas ainda produz pouco.</h2>
-          <div class="grid md:grid-cols-3 gap-8 mt-14">
-            <div class="bg-[#1A2333] p-8 rounded-2xl">
-                <h3 class="text-2xl font-bold text-green-400">Formação</h3>
-                <p class="mt-4 text-gray-300">Poucas oportunidades voltadas ao desenvolvimento de jogos.</p>
+                    <ul tabindex="0"
+                        class="dropdown-content menu bg-[#1A2333] rounded-box z-[1] w-56 p-2 shadow mt-3">
+
+                        <li>
+                            <a href="#inicio">Início</a>
+                        </li>
+
+                        <li>
+                            <a href="#sobre">Quem Somos</a>
+                        </li>
+
+                        <li>
+                            <a href="#jogos">Jogos</a>
+                        </li>
+
+                        <li>
+                            <a href="eventos.html">Eventos</a>
+                        </li>
+
+                        <li>
+                            <a href="#inscricao">Inscreva-se</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
             </div>
-            <div class="bg-[#1A2333] p-8 rounded-2xl">
-                <h3 class="text-2xl font-bold text-green-400">Incentivo</h3>
-                <p class="mt-4 text-gray-300">A indústria nacional ainda carece de investimentos e visibilidade.</p>
-            </div>
-            <div class="bg-[#1A2333] p-8 rounded-2xl">
-                <h3 class="text-2xl font-bold text-green-400">Mercado</h3>
-                <p class="mt-4 text-gray-300">Muitos talentos acabam migrando para outros países.</p>
+        </div>
+    </header>
+
+    <section id="inicio" class="min-h-screen flex items-center pt-20">
+    <div class="max-w-7xl mx-auto px-6">
+    <div class="grid lg:grid-cols-2 gap-10 items-center">
+
+        <div>
+            <span class="bg-green-500/20 text-green-400 px-4 py-2 rounded-full">🎮 Oficinas de Desenvolvimento de Jogos</span>
+            <h1 class="text-5xl md:text-6xl font-bold mt-6 leading-tight">Transforme sua paixão por jogos em uma carreira profissional.</h1>
+            <p class="text-gray-300 text-lg mt-6">Aprenda Unity, Godot e GameMaker através de oficinas práticas, crie projetos reais, desenvolva seu portfólio e conecte-se com outros futuros desenvolvedores.</p>
+            <div class="flex flex-wrap gap-4 mt-8">
+                <a href="#inscricao" class="bg-green-500 text-black font-bold px-8 py-4 rounded-xl hover:scale-105 transition">Quero Participar</a>
+                <a href="#sobre" class="border border-white/20 px-8 py-4 rounded-xl hover:bg-white/10 transition">Saiba Mais</a>
             </div>
         </div>
+
+        <div class="flex justify-center">
+            <div class="w-full max-w-md aspect-square rounded-3xl overflow-hidden flex items-center justify-center">
+                <img src="img/KoalinhaSurpresa.png" alt="Projeto Indie" class="w-full h-full object-cover">
+            </div>
+        </div>
+
     </div>
-</section>
+    </div>
+    </section>
 
-<section id="sobre" class="py-24">
-<div class="max-w-5xl mx-auto px-6 text-center">
-    <h2 class="text-5xl font-bold text-green-400">Quem Somos</h2>
-    <p class="mt-10 text-xl text-gray-300 leading-relaxed">omos uma iniciativa dedicada ao fortalecimento da indústria brasileira de jogos eletrônicos por meio da capacitação de novos profissionais. Em parceria com universidades, oferecemos oficinas práticas que unem aprendizado, experiência de mercado e desenvolvimento de portfólio.</p>
-    <p class="mt-6 text-xl text-gray-300 leading-relaxed">Nosso objetivo é estimular a inovação, revelar talentos e criar novas oportunidades para quem deseja ingressar na área de desenvolvimento de jogos digitais.</p>
-</div>
-</section>
+    <section class="relative py-24">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image:url('img/Fundinho.png');"></div>
+        <div class="absolute inset-0 bg-[#111827]/85"></div>
 
-<section class="relative py-24">
-    <div class="absolute inset-0 bg-cover bg-center" style="background-image:url('img/Fundinho2.png');"></div>
-    <div class="absolute inset-0 bg-[#111827]/85"></div>
+        <div class="relative max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center">O Brasil consome jogos. Mas ainda produz pouco.</h2>
+            <div class="grid md:grid-cols-3 gap-8 mt-14">
+                <div class="bg-[#1A2333] p-8 rounded-2xl">
+                    <h3 class="text-2xl font-bold text-green-400">Formação</h3>
+                    <p class="mt-4 text-gray-300">Poucas oportunidades voltadas ao desenvolvimento de jogos.</p>
+                </div>
+                <div class="bg-[#1A2333] p-8 rounded-2xl">
+                    <h3 class="text-2xl font-bold text-green-400">Incentivo</h3>
+                    <p class="mt-4 text-gray-300">A indústria nacional ainda carece de investimentos e visibilidade.</p>
+                </div>
+                <div class="bg-[#1A2333] p-8 rounded-2xl">
+                    <h3 class="text-2xl font-bold text-green-400">Mercado</h3>
+                    <p class="mt-4 text-gray-300">Muitos talentos acabam migrando para outros países.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="relative max-w-7xl mx-auto px-6">
-        <h2 class="text-4xl font-bold text-center">O que você recebe?</h2>
-        <div class="grid md:grid-cols-4 gap-8 mt-14">
-            <div class="bg-[#1A2333] p-8 rounded-2xl"><h3 class="font-bold text-xl mt-4">Certificação</h3></div>
-            <div class="bg-[#1A2333] p-8 rounded-2xl"><h3 class="font-bold text-xl mt-4">Horas Complementares</h3></div>
-            <div class="bg-[#1A2333] p-8 rounded-2xl"><h3 class="font-bold text-xl mt-4">Portfólio Real</h3></div>
-            <div class="bg-[#1A2333] p-8 rounded-2xl"><h3 class="font-bold text-xl mt-4">Networking</h3></div>
+    <section id="sobre" class="py-24">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+        <h2 class="text-5xl font-bold text-green-400">Quem Somos</h2>
+        <p class="mt-10 text-xl text-gray-300 leading-relaxed">Somos uma iniciativa dedicada ao fortalecimento da indústria brasileira de jogos eletrônicos por meio da capacitação de novos profissionais. Em parceria com universidades, oferecemos oficinas práticas que unem aprendizado, experiência de mercado e desenvolvimento de portfólio.</p>
+        <p class="mt-6 text-xl text-gray-300 leading-relaxed">Nosso objetivo é estimular a inovação, revelar talentos e criar novas oportunidades para quem deseja ingressar na área de desenvolvimento de jogos digitais.</p>
+    </div>
+    </section>
+
+    <section class="relative py-24">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image:url('img/Fundinho2.png');"></div>
+        <div class="absolute inset-0 bg-[#111827]/85"></div>
+
+        <div class="relative max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center">O que você recebe?</h2>
+            <div class="grid md:grid-cols-4 gap-8 mt-14">
+                <div class="bg-[#1A2333] p-8 rounded-2xl"><h3 class="font-bold text-xl mt-4">Certificação</h3></div>
+                <div class="bg-[#1A2333] p-8 rounded-2xl"><h3 class="font-bold text-xl mt-4">Horas Complementares</h3></div>
+                <div class="bg-[#1A2333] p-8 rounded-2xl"><h3 class="font-bold text-xl mt-4">Portfólio Real</h3></div>
+                <div class="bg-[#1A2333] p-8 rounded-2xl"><h3 class="font-bold text-xl mt-4">Networking</h3></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="jogos" class="py-24">
+    <div class="max-w-7xl mx-auto px-6">
+
+        <h2 class="text-5xl font-bold text-center">Projetos Desenvolvidos</h2>
+        <p class="text-center text-gray-400 mt-4">Jogos dos Alunos.</p>
+
+        <div class="grid md:grid-cols-3 gap-8 mt-16">
+            
+            <div class="game-card bg-[#1A2333] rounded-3xl overflow-hidden transition duration-300">
+                <div class="h-60 bg-gray-700 flex items-center justify-center text-6xl">
+                    <img src="img/Vorti.png" alt="Projeto Indie" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold">VorTi</h3>
+                    <p class="text-gray-400 mt-3">Jogo plataforma focado em combate a distância. Enfrente hordas de inimigos, se fortaleça e torne-se o maior dos Sentinelas</p>
+                </div>
+            </div>
+
+            <div class="game-card bg-[#1A2333] rounded-3xl overflow-hidden transition duration-300">
+                <div class="h-60 bg-gray-700 flex items-center justify-center text-6xl">
+                    <img src="img/D-Saster.png" alt="Projeto Indie" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold">D-Saster</h3>
+                    <p class="text-gray-400 mt-3">Jogo com foco em narrativa de movimentação 2D. Acompanhe Saster, garota que não vê beleza na vida em sua jornada para sorrir novamente</p>
+                </div>
+            </div>
+
+            <div class="game-card bg-[#1A2333] rounded-3xl overflow-hidden transition duration-300">
+                <div class="h-60 bg-gray-700 flex items-center justify-center text-6xl">
+                    <img src="img/Bufus-Curse.png" alt="Projeto Indie" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold">Bufus Curse</h3>
+                    <p class="text-gray-400 mt-3">Jogo RPG monocromático. Explore a Existência Bufosral e fortaleça-se, afinal, a maldição não espera ninguém, e cabe a você detê-la</p>
+                </div>
+            </div>
+
         </div>
     </div>
-</section>
 
-<section id="jogos" class="py-24">
-<div class="max-w-7xl mx-auto px-6">
+    <br>
 
-    <h2 class="text-5xl font-bold text-center">Projetos Desenvolvidos</h2>
-    <p class="text-center text-gray-400 mt-4">Jogos dos Alunos.</p>
-
-    <div class="grid md:grid-cols-3 gap-8 mt-16">
+    <section id="minigame">
+    <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-5xl font-bold text-center">Mini Game BraGameDev</h2>
+        <p class="text-center text-gray-400 mt-4">Destrua os bugs antes que eles invadam a oficina.</p>
         
-        <div class="game-card bg-[#1A2333] rounded-3xl overflow-hidden transition duration-300">
-            <div class="h-60 bg-gray-700 flex items-center justify-center text-6xl">
-                <img src="img/Vorti.png" alt="Projeto Indie" class="w-full h-full object-cover">
-            </div>
-            <div class="p-6">
-                <h3 class="text-2xl font-bold">VorTi</h3>
-                <p class="text-gray-400 mt-3">Jogo plataforma focado em combate a distância. Enfrente hordas de inimigos, se fortaleça e torne-se o maior dos Sentinelas</p>
-            </div>
+        <div class="flex flex-col items-center mt-10">
+            <canvas id="gameCanvas" width="900" height="500" class="border border-white/10 rounded-3xl bg-[#0B1220]"></canvas>
+            <button id="startGame" class="mt-6 bg-green-500 text-black font-bold px-8 py-4 rounded-xl">INICIAR JOGO</button>
         </div>
+    </div>
+    </section>
+    </section>
 
-        <div class="game-card bg-[#1A2333] rounded-3xl overflow-hidden transition duration-300">
-            <div class="h-60 bg-gray-700 flex items-center justify-center text-6xl">
-                <img src="img/D-Saster.png" alt="Projeto Indie" class="w-full h-full object-cover">
-            </div>
-            <div class="p-6">
-                <h3 class="text-2xl font-bold">D-Saster</h3>
-                <p class="text-gray-400 mt-3">Jogo com foco em narrativa de movimentação 2D. Acompanhe Saster, garota que não vê beleza na vida em sua jornada para sorrir novamente</p>
-            </div>
-        </div>
+    <section
+    id="inscricao"
+    class="py-24 bg-[#111827]">
 
-        <div class="game-card bg-[#1A2333] rounded-3xl overflow-hidden transition duration-300">
-            <div class="h-60 bg-gray-700 flex items-center justify-center text-6xl">
-                <img src="img/Bufus-Curse.png" alt="Projeto Indie" class="w-full h-full object-cover">
-            </div>
-            <div class="p-6">
-                <h3 class="text-2xl font-bold">Bufus Curse</h3>
-                <p class="text-gray-400 mt-3">Jogo RPG monocromático. Explore a Existência Bufosral e fortaleça-se, afinal, a maldição não espera ninguém, e cabe a você detê-la</p>
-            </div>
+    <div class="max-w-3xl mx-auto px-6">
+
+    <div class="relative overflow-hidden rounded-3xl border border-white/10 min-h-[700px]">
+        <!-- GIF / VÍDEO DE FUNDO -->
+
+    <div class="absolute inset-0 bg-black">
+    <img
+        src="img/PacmanGIF.gif"
+        alt=""
+        class="absolute inset-0 w-full h-full object-fill">
+    </div>
+
+        <!-- ESCURECIMENTO -->
+
+        <div class="absolute inset-0 bg-[#0B1220]/85 backdrop-blur-sm"></div>
+
+        <div class="relative p-10 md:p-16">
+
+            <h2 class="text-5xl font-bold text-center">
+                Inscreva-se
+            </h2>
+
+            <p class="text-center text-gray-300 mt-4">
+                Garanta sua vaga e comece sua jornada no desenvolvimento de jogos.
+            </p>
+
+            <form
+            class="mt-12 space-y-6 max-w-2xl mx-auto"
+            onsubmit="enviarFormulario(event)">
+
+                <input
+                type="text"
+                placeholder="Nome Completo"
+                class="w-full p-4 rounded-xl bg-[#1A2333]/90 border border-white/10">
+
+                <input
+                type="email"
+                placeholder="Email"
+                class="w-full p-4 rounded-xl bg-[#1A2333]/90 border border-white/10">
+
+                <input
+                type="text"
+                placeholder="Curso"
+                class="w-full p-4 rounded-xl bg-[#1A2333]/90 border border-white/10">
+
+                <input
+                type="text"
+                placeholder="Instituição"
+                class="w-full p-4 rounded-xl bg-[#1A2333]/90 border border-white/10">
+
+                <button
+                class="w-full bg-green-500 text-black font-bold p-4 rounded-xl hover:scale-[1.02] transition">
+
+                    QUERO PARTICIPAR
+
+                </button>
+
+            </form>
+
         </div>
 
     </div>
-</div>
+    </section>
 
-<br>
+    <footer class="py-10 border-t border-white/10 text-center text-gray-400">
+        copyright © 2026 BraGameDev
+    </footer>
 
-<section id="minigame">
-<div class="max-w-5xl mx-auto px-6">
-    <h2 class="text-5xl font-bold text-center">Mini Game BraGameDev</h2>
-    <p class="text-center text-gray-400 mt-4">Destrua os bugs antes que eles invadam a oficina.</p>
+    <script src="index.js"></script>
     
-    <div class="flex flex-col items-center mt-10">
-        <canvas id="gameCanvas" width="900" height="500" class="border border-white/10 rounded-3xl bg-[#0B1220]"></canvas>
-        <button id="startGame" class="mt-6 bg-green-500 text-black font-bold px-8 py-4 rounded-xl">INICIAR JOGO</button>
-    </div>
-</div>
-</section>
-</section>
-
-<section
-id="inscricao"
-class="py-24 bg-[#111827]">
-
-<div class="max-w-3xl mx-auto px-6">
-
-<div class="relative overflow-hidden rounded-3xl border border-white/10 min-h-[700px]">
-    <!-- GIF / VÍDEO DE FUNDO -->
-
-<div class="absolute inset-0 bg-black">
-<img
-    src="img/PacmanGIF.gif"
-    alt=""
-    class="absolute inset-0 w-full h-full object-fill">
-   </div>
-
-    <!-- ESCURECIMENTO -->
-
-    <div class="absolute inset-0 bg-[#0B1220]/85 backdrop-blur-sm"></div>
-
-    <!-- CONTEÚDO -->
-
-    <div class="relative p-10 md:p-16">
-
-        <h2 class="text-5xl font-bold text-center">
-            Inscreva-se
-        </h2>
-
-        <p class="text-center text-gray-300 mt-4">
-            Garanta sua vaga e comece sua jornada no desenvolvimento de jogos.
-        </p>
-
-        <form
-        class="mt-12 space-y-6 max-w-2xl mx-auto"
-        onsubmit="enviarFormulario(event)">
-
-            <input
-            type="text"
-            placeholder="Nome Completo"
-            class="w-full p-4 rounded-xl bg-[#1A2333]/90 border border-white/10">
-
-            <input
-            type="email"
-            placeholder="Email"
-            class="w-full p-4 rounded-xl bg-[#1A2333]/90 border border-white/10">
-
-            <input
-            type="text"
-            placeholder="Curso"
-            class="w-full p-4 rounded-xl bg-[#1A2333]/90 border border-white/10">
-
-            <input
-            type="text"
-            placeholder="Instituição"
-            class="w-full p-4 rounded-xl bg-[#1A2333]/90 border border-white/10">
-
-            <button
-            class="w-full bg-green-500 text-black font-bold p-4 rounded-xl hover:scale-[1.02] transition">
-
-                QUERO PARTICIPAR
-
-            </button>
-
-        </form>
-
-    </div>
-
-</div>
-</section>
-
-</body>
-</html>
-</section>
-
-<footer class="py-10 border-t border-white/10 text-center text-gray-400">
-    copyright © 2026 BraGameDev
-</footer>
-
-<script src="index.js"></script>
 </body>
 </html>
